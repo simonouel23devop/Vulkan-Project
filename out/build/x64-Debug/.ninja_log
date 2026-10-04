@@ -1,0 +1,9 @@
+# ninja log v7
+2	358	8127843633168420	CMakeFiles/Vulkan-Project.dir/src/main.cpp.obj	203f05c5cad27006
+359	809	8127843636690954	Vulkan-Project.exe	1c0eef929c11e2de
+5	344	8127843866886880	CMakeFiles/Vulkan-Project.dir/src/main.cpp.obj	203f05c5cad27006
+344	610	8127843870195978	Vulkan-Project.exe	1c0eef929c11e2de
+3	328	8127844128239548	CMakeFiles/Vulkan-Project.dir/src/main.cpp.obj	203f05c5cad27006
+328	581	8127844131536189	Vulkan-Project.exe	1c0eef929c11e2de
+3	331	8127844630645713	CMakeFiles/Vulkan-Project.dir/src/main.cpp.obj	203f05c5cad27006
+331	593	8127844634024629	Vulkan-Project.exe	1c0eef929c11e2de
