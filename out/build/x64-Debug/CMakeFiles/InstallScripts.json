@@ -1,7 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/cmake_install.cmake"
+		"C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/cmake_install.cmake",
+		"C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

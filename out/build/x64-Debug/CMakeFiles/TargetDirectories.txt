@@ -1,3 +1,9 @@
 C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir
 C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/CMakeFiles/edit_cache.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/CMakeFiles/rebuild_cache.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
+C:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir

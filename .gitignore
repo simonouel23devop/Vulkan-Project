@@ -1,0 +1,26 @@
+# Build directories and outputs
+build/
+dist/
+out/
+target/
+bin/
+obj/
+vs/
+.vs/
+.vs\Vulkan-Project.slnx\FileContentIndex\
+.vs/Vulkan-Project.slnx/FileContentIndex/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Environment and configuration files
+.env
+.env.local
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
