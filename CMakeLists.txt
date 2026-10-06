@@ -75,6 +75,12 @@ add_executable(Vulkan-Project ${VulkanEngineSources})
 # Project headers
 target_include_directories(Vulkan-Project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
+# Precompiled header
+# Use CMake's target_precompile_headers where supported
+if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.16")
+	target_precompile_headers(Vulkan-Project PRIVATE src/pch.h)
+endif()
+
 # Prefer the imported Vulkan target when available, fall back to variables
 if(BUILD_WITH_VULKAN)
 	if(TARGET Vulkan::Vulkan)

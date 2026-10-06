@@ -49,9 +49,55 @@ cmake_ninja_workdir = C$:\Users\simon\source\repos\Source\Vulkan-Project\out\bui
 
 build cmake_object_order_depends_target_Vulkan-Project: phony || cmake_object_order_depends_target_glfw
 
-build CMakeFiles\Vulkan-Project.dir\src\main.cpp.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\src\main.cpp || cmake_object_order_depends_target_Vulkan-Project
+build CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx | CMakeFiles\Vulkan-Project.dir\cmake_pch.hxx || cmake_object_order_depends_target_Vulkan-Project
   CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /YcC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx /FpC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/.//cmake_pch.cxx.pch /FIC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\simon\source\repos\Source\Vulkan-Project\src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glm-src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glfw-src\include -external:IC:\VulkanSDK\1.4.363.0\include -external:W0
+  OBJECT_DIR = CMakeFiles\Vulkan-Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vulkan-Project.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Vulkan-Project.dir\
+  TARGET_PDB = Vulkan-Project.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Vulkan-Project.dir
+
+
+#############################################
+# Additional output files.
+
+build CMakeFiles\Vulkan-Project.dir\.\\cmake_pch.cxx.pch: phony CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.obj
+
+build CMakeFiles\Vulkan-Project.dir\src\VulkanRenderer.cpp.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\src\VulkanRenderer.cpp | CMakeFiles\Vulkan-Project.dir\cmake_pch.hxx CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Vulkan-Project
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /YuC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx /FpC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/.//cmake_pch.cxx.pch /FIC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\simon\source\repos\Source\Vulkan-Project\src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glm-src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glfw-src\include -external:IC:\VulkanSDK\1.4.363.0\include -external:W0
+  OBJECT_DIR = CMakeFiles\Vulkan-Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vulkan-Project.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Vulkan-Project.dir\
+  TARGET_PDB = Vulkan-Project.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Vulkan-Project.dir
+
+build CMakeFiles\Vulkan-Project.dir\src\Window.cpp.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\src\Window.cpp | CMakeFiles\Vulkan-Project.dir\cmake_pch.hxx CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Vulkan-Project
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /YuC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx /FpC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/.//cmake_pch.cxx.pch /FIC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\simon\source\repos\Source\Vulkan-Project\src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glm-src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glfw-src\include -external:IC:\VulkanSDK\1.4.363.0\include -external:W0
+  OBJECT_DIR = CMakeFiles\Vulkan-Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vulkan-Project.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Vulkan-Project.dir\
+  TARGET_PDB = Vulkan-Project.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Vulkan-Project.dir
+
+build CMakeFiles\Vulkan-Project.dir\src\main.cpp.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\src\main.cpp | CMakeFiles\Vulkan-Project.dir\cmake_pch.hxx CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Vulkan-Project
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /YuC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx /FpC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/.//cmake_pch.cxx.pch /FIC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\simon\source\repos\Source\Vulkan-Project\src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glm-src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glfw-src\include -external:IC:\VulkanSDK\1.4.363.0\include -external:W0
+  OBJECT_DIR = CMakeFiles\Vulkan-Project.dir
+  OBJECT_FILE_DIR = CMakeFiles\Vulkan-Project.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Vulkan-Project.dir\
+  TARGET_PDB = Vulkan-Project.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Vulkan-Project.dir
+
+build CMakeFiles\Vulkan-Project.dir\src\pch.cpp.obj: CXX_COMPILER__Vulkan-Project_unscanned_Debug C$:\Users\simon\source\repos\Source\Vulkan-Project\src\pch.cpp | CMakeFiles\Vulkan-Project.dir\cmake_pch.hxx CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Vulkan-Project
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /YuC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx /FpC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/.//cmake_pch.cxx.pch /FIC:/Users/simon/source/repos/Source/Vulkan-Project/out/build/x64-Debug/CMakeFiles/Vulkan-Project.dir/cmake_pch.hxx
   INCLUDES = -IC:\Users\simon\source\repos\Source\Vulkan-Project\src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glm-src -IC:\Users\simon\source\repos\Source\Vulkan-Project\out\build\x64-Debug\_deps\glfw-src\include -external:IC:\VulkanSDK\1.4.363.0\include -external:W0
   OBJECT_DIR = CMakeFiles\Vulkan-Project.dir
   OBJECT_FILE_DIR = CMakeFiles\Vulkan-Project.dir\src
@@ -67,7 +113,7 @@ build CMakeFiles\Vulkan-Project.dir\src\main.cpp.obj: CXX_COMPILER__Vulkan-Proje
 #############################################
 # Link the executable Vulkan-Project.exe
 
-build Vulkan-Project.exe: CXX_EXECUTABLE_LINKER__Vulkan-Project_Debug CMakeFiles\Vulkan-Project.dir\src\main.cpp.obj | C$:\VulkanSDK\1.4.363.0\Lib\vulkan-1.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib
+build Vulkan-Project.exe: CXX_EXECUTABLE_LINKER__Vulkan-Project_Debug CMakeFiles\Vulkan-Project.dir\cmake_pch.cxx.obj CMakeFiles\Vulkan-Project.dir\src\VulkanRenderer.cpp.obj CMakeFiles\Vulkan-Project.dir\src\Window.cpp.obj CMakeFiles\Vulkan-Project.dir\src\main.cpp.obj CMakeFiles\Vulkan-Project.dir\src\pch.cpp.obj | C$:\VulkanSDK\1.4.363.0\Lib\vulkan-1.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
