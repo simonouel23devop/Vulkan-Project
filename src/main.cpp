@@ -84,9 +84,25 @@ try {
 		return EXIT_FAILURE;
 	}
 
+	// Capture cursor for mouse look
+	glfwSetInputMode(window.handle(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
 	// Main loop (draw each frame and handle resize)
+	// Give renderer access to the Window wrapper for input
+	renderer.setWindow(&window);
+
+	double lastTime = glfwGetTime();
 	while (!window.shouldClose()) {
 		window.pollEvents();
+
+		double now = glfwGetTime();
+		float dt = static_cast<float>(now - lastTime);
+		lastTime = now;
+
+		// Update camera / input
+		renderer.update(dt);
+		// Update uniform buffer with view/proj from camera
+		renderer.updateUniformBuffer();
 
 		if (window.wasResized()) {
 			std::cout << "Window resized, recreating swapchain..." << std::endl;
@@ -101,7 +117,8 @@ try {
 
 		// Draw a frame (clears to black)
 		try {
-			renderer.drawFrame();
+			// Use the internal draw implementation that renders the sample triangle/scene
+			renderer.drawFrameInternal();
 		} catch (const std::exception& e) {
 			std::cerr << "Render error: " << e.what() << std::endl;
 			break;
