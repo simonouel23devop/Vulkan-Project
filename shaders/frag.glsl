@@ -23,6 +23,25 @@ bool approxColor(vec3 c, vec3 target, float tol) {
 void main() {
 	vec3 baseColor = fragColor;
 
+	// Quick room-culling: discard fragments that belong to the large surrounding room
+	// (large room geometry is far from origin in X/Z and sits above the ground).
+	// This removes the grey ceiling/walls without changing geometry.
+	float roomCullThreshold = 6.0; // world-space distance threshold
+	if (max(abs(worldPos.x), abs(worldPos.z)) > roomCullThreshold && worldPos.y > 0.1) {
+		discard;
+	}
+
+	// Highlight/grey the floor area beneath the vertical cube
+	// Adjust these extents to match the cube footprint in world space.
+	float cubeFloorHalfX = 1.5; // half-width along X of the vertical cube footprint
+	float cubeFloorHalfZ = 1.5; // half-depth along Z of the vertical cube footprint
+	// Move the grey band lower on the Y axis (world-space) so it appears beneath the floor
+	// move the grey band further down (lower Y) to place it below the cube
+	if (abs(worldPos.x) < cubeFloorHalfX && abs(worldPos.z) < cubeFloorHalfZ && worldPos.y > -3.0 && worldPos.y < -2.0) {
+		// set a neutral grey for the floor under the cube
+		baseColor = vec3(0.75);
+	}
+
 	// Also allow color-key desaturation: if color is vivid purple/blue/yellow/cyan, make it a darker grey first
 	float tol = 0.35;
 	bool isPurple = approxColor(baseColor, vec3(1.0, 0.0, 1.0), tol);
